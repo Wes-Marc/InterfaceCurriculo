@@ -120,6 +120,12 @@ namespace InterfaceCurriculo
             this.chbEmprego4 = new System.Windows.Forms.CheckBox();
             this.chbEmprego2 = new System.Windows.Forms.CheckBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tabInfoPessoais.SuspendLayout();
             this.tabEscolaridade.SuspendLayout();
@@ -133,6 +139,8 @@ namespace InterfaceCurriculo
             this.painelEmpresa2.SuspendLayout();
             this.painelEmpresa1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -141,10 +149,11 @@ namespace InterfaceCurriculo
             this.tabControl1.Controls.Add(this.tabEscolaridade);
             this.tabControl1.Controls.Add(this.tabExperienciaProfissional);
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(1, 31);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(738, 416);
+            this.tabControl1.Size = new System.Drawing.Size(737, 416);
             this.tabControl1.TabIndex = 0;
             // 
             // tabInfoPessoais
@@ -179,7 +188,7 @@ namespace InterfaceCurriculo
             this.tabInfoPessoais.Location = new System.Drawing.Point(4, 22);
             this.tabInfoPessoais.Name = "tabInfoPessoais";
             this.tabInfoPessoais.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInfoPessoais.Size = new System.Drawing.Size(730, 390);
+            this.tabInfoPessoais.Size = new System.Drawing.Size(729, 390);
             this.tabInfoPessoais.TabIndex = 0;
             this.tabInfoPessoais.Text = "INFORMAÇÕES PESSOAIS";
             // 
@@ -378,7 +387,7 @@ namespace InterfaceCurriculo
             this.tabEscolaridade.Location = new System.Drawing.Point(4, 22);
             this.tabEscolaridade.Name = "tabEscolaridade";
             this.tabEscolaridade.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEscolaridade.Size = new System.Drawing.Size(730, 390);
+            this.tabEscolaridade.Size = new System.Drawing.Size(729, 390);
             this.tabEscolaridade.TabIndex = 1;
             this.tabEscolaridade.Text = "ESCOLARIDADE";
             // 
@@ -644,7 +653,7 @@ namespace InterfaceCurriculo
             this.tabExperienciaProfissional.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabExperienciaProfissional.Location = new System.Drawing.Point(4, 22);
             this.tabExperienciaProfissional.Name = "tabExperienciaProfissional";
-            this.tabExperienciaProfissional.Size = new System.Drawing.Size(730, 390);
+            this.tabExperienciaProfissional.Size = new System.Drawing.Size(729, 390);
             this.tabExperienciaProfissional.TabIndex = 2;
             this.tabExperienciaProfissional.Text = "EXPERIÊNCIAS PROFISSIONAIS";
             // 
@@ -995,18 +1004,83 @@ namespace InterfaceCurriculo
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(730, 390);
+            this.tabPage1.Size = new System.Drawing.Size(729, 390);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "SALVAR CURRICULO";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(18, 29);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(66, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Eduarda";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(18, 52);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(55, 17);
+            this.checkBox9.TabIndex = 1;
+            this.checkBox9.Text = "Gisele";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(18, 75);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(56, 17);
+            this.checkBox10.TabIndex = 2;
+            this.checkBox10.Text = "Luana";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(18, 98);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(52, 17);
+            this.checkBox11.TabIndex = 3;
+            this.checkBox11.Text = "Maria";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(18, 121);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(107, 17);
+            this.checkBox12.TabIndex = 4;
+            this.checkBox12.Text = "Meu Computador";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.checkBox12);
+            this.groupBox2.Controls.Add(this.checkBox11);
+            this.groupBox2.Controls.Add(this.checkBox10);
+            this.groupBox2.Controls.Add(this.checkBox9);
+            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Location = new System.Drawing.Point(18, 28);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(532, 155);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Escolha onde salvar";
             // 
             // frmGerador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(737, 446);
+            this.ClientSize = new System.Drawing.Size(737, 415);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1038,6 +1112,9 @@ namespace InterfaceCurriculo
             this.painelEmpresa1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1134,6 +1211,12 @@ namespace InterfaceCurriculo
         private System.Windows.Forms.Panel painelEmpregos;
         private System.Windows.Forms.Label lblShowPrimeiro;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
